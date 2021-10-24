@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Formatação do menu temporário*/
+.ulMenu{
+    display: flex;
+}
+
+/* *************** TEMPORÁRIO ************** */
+.bg-header{
+    width: 100%;
+    height: 50px;
+    background-color: gold;
+}
+
+main{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bg-footer{
+    width: 100%;
+    height: 150px;
+    background-color: gray;
+    margin-top: 40px;
+}
+
+/********************* Estilo Pag4 O.O **************/
+/* estilização da tabela */
+table{
+    border-collapse: collapse; /* faz com que a borda fique uma listrinha só*/
+    border: 1px solid black;
+    width: 100%;
+}
+
+/* estilização do cabeçalho da tabela */
+table th{
+    background-color: gold;
+}
+table td{
+    text-align: center;
+}
+
+/* classe para formatar quando quiser alinhar ao centro */
+.txt-center{
+    text-align: center;
+}
+
+/* é a area em que ficarão os itens que receberão as informações de cadastro */
+.card-info{
+    margin-top: 30px;
+    background-color: whitesmoke;
+    width: 80%;
+    height: auto;
+    font-size: larger;
+}
+
+/* classe dos campos de input */
+.area-input{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.box-listas{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* lista dos serviços que fica no card de info */
+.lista-servicos{
+    list-style: none; 
+}
+
+/* lista de inputs no card de info */
+.lista-input{
+    /* border: 2px solid red; */
+    display: inline-block;
+    line-height: 2;
+    font-size: larger;
+}
+
+/* id da lista que fica a direita (lista do tamanho da empresa) */
+#listaEmpresa{
+    /* border: 2px solid green; */
+    float: right;
+}
+/* campo de input dentro do card-input */
+.input-form{
+    width: 80%;
+    height: 30px;
+    border-radius: 12px;
+    border: 2px solid gold;
+}
+
+/* area em que serão exibidos os valores parciais dos serviços cadastrados */
+.area-valor{
+    margin-top: 5px;
+    margin-bottom: 0px;
+    /* background-color: red; */
+    width: 80%;
+    height: 60px;
+    display: flex;
+    justify-content: right;
+}
+/* são as divs que contém os valores referentes aos itens */
+.campo-valor{
+    border: 2px solid gold;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: larger;
+    font-weight: bolder;
+    padding: 8px;
+}
+
+/* selecionando o primeiro filho da section area-valor */
+.campo-valor:nth-child(1){
+    margin-right: 20px;
+}
+
+/* selecionando os p dentro da div area valor */
+.area-valor p{
+    display: inline-block;
+}
+
+.area-botoes{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* estilizando os botoes */
+.botao {
+    background-color: gold; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: black;
+    padding: 11px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+/* define comportamento de quando o mouse for passado por cima dos botoes*/
+.botao:hover{
+    background-color: yellow;
+}
+
+/* estilização da tabela que receberá os itens a serem listados */
+.tabela{
+    margin-top: 15px;
+    background-color: whitesmoke;
+    width: 80%;
+    height: 200px; 
+}
+
+@media screen and (max-width: 780px){
+    *{
+        font-size: medium;
+    }   
+}
