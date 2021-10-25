@@ -95,6 +95,13 @@ html, body{
     border-radius: 10px;
 }
 
+.inputTextSelect{
+    width: 35em;
+    height: 2.4em;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
 .inputText:cepCpf{
     width: 5em;
     height: 2em;

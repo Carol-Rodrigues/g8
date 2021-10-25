@@ -73,15 +73,20 @@
                         <div class="divCpfCep">
                             <div class="divCpf">
                                 <label class="label" for="cpf">CPF: </label><br>
-                                <input class="inputCpf" type="text" id="idCpf" name="cpf" required>
+                                <input class="inputCpf" type="text" id="idCpf" name="cpf" maxlength="11" placeholder="Digite apenas números" required>
                             </div>
                             <div class="divCep">
                                 <label class="label" for="cep">Cep: </label><br>
-                                <input class="inputCep" type="text" id="idCep" name="cep" required>
+                                <input class="inputCep" type="text" id="idCep" name="cep" maxlength="8" placeholder="Digite apenas números" required>
                             </div>
                         </div><br>                
                         <label class="label" for="genero">Gênero: </label><br>
-                        <input class="inputText" type="text" id="idGenero" name="genero" required>
+                        <select class="inputTextSelect" name="genero" id="genero">
+                            <option value=""></option>
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                        </select>
+                        <!-- <input class="inputText" type="text" id="idGenero" name="genero" required> -->
                     </div>
                     
                     <div class="C">                        
@@ -89,8 +94,7 @@
                         <!-- <input class="inputText" type="text" id="idMensagem" name="mensagem">                         -->
                         <textarea class="inputText" type="text" id="idMensagem" name="mensagem" required></textarea><br><br>
                         <button type="submit" id="btn_enviar">Cadastrar</button>
-                        <button type="reset" id="btn_limpar">Limpar</button>
-                        <button type="button" id="btn_teste">Clique Aqui...</button>
+                        <button type="reset" id="btn_limpar">Limpar</button>                      
                     </div>
     
                     <div class="D">
