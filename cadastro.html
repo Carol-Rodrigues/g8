@@ -12,10 +12,12 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/cadastro.css" type="text/css">
+    <link rel="stylesheet" href="css/menu.css" type="text/css">
 
     <!-- SCRIPT -->
     <script type="text/Javascript" src="js/jquery.js"></script>
     <script src="js/javaScript_cadastro.js"></script>
+    <script type="text/Javascript" src="js/script_index.js"></script>
 
     <!-- FONTE -->
     <!-- Fonte Roboto -->
@@ -35,22 +37,22 @@
 <!---------------------------------------------- BODY --------------------------------------------->
 <body>
     <header>
-
+        <nav>
+            <div id="menu">
+                <ul class="ulMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <nav>
-        <ul class="ulMenu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="servicos.html">Serviços</a></li>
-            <li><a href="cadastro.html">Cadastro</a></li>
-        </ul>
-    </nav>
-    <section class="container">
-        <div class="divTesteHeader">
-            <h1>Aqui vai o logo e menu</h1>
-        </div>
-
-        <main class="main"> 
-           <form>
+  
+        <main> 
+            <div id="banner">
+                <p id="nome"></p>
+            </div>
+            <form>
                <fieldset class="container">
                     <div class="A">
                         <labe class="label" for="nome">Nome: </labe><br>
@@ -106,6 +108,5 @@
         <div class="divTesteRodape">
             <h1> Aqui vai o footer</h1>
         </div>
-    </section>
 </body>
 </html>
