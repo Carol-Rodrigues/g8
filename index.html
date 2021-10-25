@@ -5,19 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style_index.css">
-    <title>G8 Tecnologia</title>    
-    <meta name="author" content="G8" />
-    <meta name="description" content="Site de portfolio desenvolvedores web" />
+
+    <!-- TÍTULO DA PÁGINA -->
+    <title>G8 Tecnologia</title>  
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/menu.css">
+
+
+    <!-- SCRIPT -->
+    <script type="text/Javascript" src="js/jquery.js"></script>
+    <script type="text/Javascript" src="js/script_index.js"></script>
+    
+    <!-- FONTE -->
+    <!-- Fonte Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        
+    <!-- KEYWORDS -->
     <meta name="keywords" content="desenvolvedor, front-end, back-end, fullstack" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
-    </script>
+    
+    <!-- DESCRIÇÃO -->
+    <meta name="description" content="Site de portfolio desenvolvedores web" />
+    
+    <!-- AUTOR -->
+    <meta name="author" content="G8" />
+    
 </head>
 
 <body onload="escrever()">
     <header>
-        <nav>HEADER</nav>
+        <nav>
+            <div id="menu">
+                <ul class="ulMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <main>
         <div id="banner">
@@ -26,7 +52,7 @@
         <!-- Abertura da Sessão Sobre Nós -->
         <section id="sobreNos">
             <h1>Sobre nós</h1>
-            <p>Contamos com profissionais qualificados para a execução de nossos trabalhos. Nosso time atua nas áreas de
+            <p class="descricaoSN">Contamos com profissionais qualificados para a execução de nossos trabalhos. Nosso time atua nas áreas de
                 desenvolvimento Front-End, Back-End e Full Stack. Os projetos são realizados por toda nossa equipe,
                 considerando as hard-skills de cada um dos 5 co-fundadores da G8 Tecnologia.</p>
             <!-- Criação da grid area que receberá os cartões rotativos com informação sobre a empresa e fundadores (grid items) -->
@@ -44,7 +70,8 @@
                             <div class="versoCartao">
                                 <h2>G8 Tecnologia</h2>
                                 <h3>Objetivos / escopo</h3>
-                                <p class="descricao">Somos uma empresa de tecnologia, com foco em prestar serviços de desenvolvimento web para nossos clientes. Nossos trabalhos são realizados pelos próprios fundadores da G8. Buscamos alinhar as hard-skills de maior destaque de cada integrante para entregar sempre o melhor trabalho possível a nossos clientes.</p>
+                                <p class="descricao" id="descricaoG8">Somos uma empresa de tecnologia, com foco em serviços de desenvolvimento web. Nossos trabalhos são realizados pelos próprios fundadores da G8. Buscamos alinhar as hard-skills e soft-skills de cada integrante, sempre conversando e dividindo os trabalhos em conjunto e em harmonia buscando o melhor para nossos clientes.</p>
+                                <p class="desc2">O melhor do Desenvolvimento Web</p>
                             </div>
                         </div>
                     </div>
@@ -60,9 +87,9 @@
                             </div>
                             <!-- Verso do cartão com as informações da empresa ou do co-fundador -->
                             <div class="versoCartao">
-                                <h2>André Sobrenome</h2>
-                                <p>lorem</p>
-                                <p>ipsum</p>
+                                <h2>André Morelli</h2>
+                                <p class="descricao">Responsável pela implementação do projeto da calculadora simples e científica, André é um dos fundadores originais da G8 Tecnologia. Em seu primeiro projeto, André fez parte do grupo de sustentabilidade, que pode ser visto nos trabalhos mais recentes.</p>
+                                <p class="desc2">Criador da calculadora simples/científica</p>
                             </div>
                         </div>
                     </div>
@@ -78,9 +105,9 @@
                             </div>
                             <!-- Verso do cartão com as informações da empresa ou do co-fundador -->
                             <div class="versoCartao">
-                                <h2>Carolina R Arangues</h2>
-                                <p>lorem</p>
-                                <p>ipsum</p>
+                                <h2>Carolina R. Arangues</h2>
+                                <p class="descricao">Integrante do time de fundadores originais da G8, Carol iniciou seu portfólio com um projeto de e-commerce de projetores móveis e portáteis. No projeto da G8, foi responsável pela criação da landing page e suas funcionalidades.</p>
+                                <p class="desc2">Desenvolvedora da landing page</p>
                             </div>
                         </div>
                     </div>
@@ -96,9 +123,9 @@
                             </div>
                             <!-- Verso do cartão com as informações da empresa ou do co-fundador -->
                             <div class="versoCartao">
-                                <h2>Fábio Sobrenome</h2>
-                                <p>lorem</p>
-                                <p>ipsum</p>
+                                <h2>Fábio M. Godoy</h2>
+                                <p class="descricao">Seu projeto inicial foi a criação de um pet shop chamado de Tetty's Shop. Também fundador original da G8, Fábio foi responsável pela criação da página de cadastro e implementação das funcionalidades de validação dos dados da página.</p>
+                                <p class="desc2">Desenvolveu a página de cadastro e suas validações</p>
                             </div>
                         </div>
                     </div>
@@ -110,13 +137,13 @@
                         <div class="cartaoInterno">
                             <!-- Parte frontal do cartão com as fotos ou logo -->
                             <div class="frenteCartao">
-                                <img src="imagens/pessoa.jpg" alt="Avatar">
+                                <img src="imagens/Geisa.jpeg" alt="Avatar">
                             </div>
                             <!-- Verso do cartão com as informações da empresa ou do co-fundador -->
                             <div class="versoCartao">
-                                <h2>Geisa Sobrenome</h2>
-                                <p>lorem</p>
-                                <p>ipsum</p>
+                                <h2>Geisa Santos</h2>
+                                <p class="descricao">Responsável pela criação do header e footer de todas as páginas, Geisa elaborou o logo de nossa G8 Tecnologia. Com o olhar de artista que é notável em seu projeto Atelie Digital, essa fundadora original deu seu toque pessoal em nossa paleta de cores e todo design da G8.</p>
+                                <p class="desc2">Criou o logo, header e footer e nossa paleta de cores</p>
                             </div>
                         </div>
                     </div>
@@ -128,13 +155,13 @@
                         <div class="cartaoInterno">
                             <!-- Parte frontal do cartão com as fotos ou logo -->
                             <div class="frenteCartao">
-                                <img src="imagens/pessoa.jpg" alt="Avatar">
+                                <img src="imagens/Lucas.jpeg" alt="Avatar">
                             </div>
                             <!-- Verso do cartão com as informações da empresa ou do co-fundador -->
                             <div class="versoCartao">
-                                <h2>Lucas Sobrenome</h2>
-                                <p>lorem</p>
-                                <p>ipsum</p>
+                                <h2>Lucas Paiva</h2>
+                                <p class="descricao">Responsável pela elaboração da página para realização de orçamentos dos serviços da G8, Lucas também faz parte do time dos fundadores originais do Grupo. Em seu primeiro projeto, trabalhou com logística reversa.</p>
+                                <p class="desc2">Criou a página de orçamentos com Orientação a Objetos</p>
                             </div>
                         </div>
                     </div>
@@ -147,10 +174,9 @@
             <div id="divNT1">
                 <h1>Nossos Trabalhos</h1>
                 <p>Apresentamos a vocês os últimos trabalhos realizados em desenvolvimento Web - utilizando HTML, CSS,
-                    JavaScript e jQuery. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut necessitatibus
-                    illum odio et, ratione perspiciatis eveniet, ad optio exercitationem quis molestias dolores sapiente
-                    accusamus est ex explicabo veritatis, consequuntur libero!</p>
-                <button><a href="">Faça seu orçamento<span class="flecha">&gt;</span></a></button>
+                    JavaScript e jQuery.</p><br>
+                <p>Cabe dizer que a G8 Tecnologia também possui parceiros espeicializados nas mais diversas áreas do mercado, de forma que também realizamos a intermediação de serviços diversos da área de tecnologia, como Manutenção de Software, Consultorias gerais - Solução, Aquisições e Infraestrutura, e Desenvolvimentos em geral.</p>
+                <button><a href="servicos.html">Faça seu orçamento<span class="flecha">&gt;</span></a></button>
             </div>
             <div id="divNT2"></div>
         </section>
@@ -183,7 +209,7 @@
             </div>
             <div class="trabalho">
                 <h3>Enroter</h3>
-                <a href="https://github.com/lcspaiva/progweb2019" target="_blank">Acesse aqui <span class="flecha">&gt;</span></a>
+                <a href="https://github.com/lcspaiva/ProjetoFinal-SoulCode-Ver2" target="_blank">Acesse aqui <span class="flecha">&gt;</span></a>
             </div>
         </section>
         <!-- Encerramento da Sessão Trabalhos Recentes -->
@@ -193,7 +219,7 @@
                 <p>Não perca as últimas notícias</p>
                 <h1>Inscreva-se</h1>
                 <p>Acesse nosso formulário para assinar a Newsletter da G8 e ficar por dentro das últimas novidades.</p>
-                <button><a href="">Clique aqui<span class="flecha">&gt;</span></a></button>
+                <button><a href="cadastro.html">Clique aqui<span class="flecha">&gt;</span></a></button>
             </div>
             <div id="inscreva2"></div>
         </section>

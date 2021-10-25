@@ -21,11 +21,6 @@
         background-color: #FF9900;
     }  
 
-    /*Formatação do menu temporário*/
-    .ulMenu{
-        display: flex;
-    }
-
     .flecha {
         margin-left: 15px;
         font-weight: 700;
