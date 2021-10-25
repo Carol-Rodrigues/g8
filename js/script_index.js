@@ -11,7 +11,7 @@ function escrever() {
 
 // Função para imagens rotativas na área de "Nossos Trabalhos"
 $(document).ready(function () {
-    let vtBanner = ["imagens/banner1.png", "imagens/banner2.png", "imagens/banner3.png"];
+    let vtBanner = ["imagens/banner1.png", "imagens/banner2.png", "imagens/banner3.png", "imagens/banner4.png", "imagens/banner5.png"];
     let max = vtBanner.length - 1;
     let i = 0;
 
