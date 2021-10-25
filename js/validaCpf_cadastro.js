@@ -1,6 +1,7 @@
 $( document ).ready(function(){
     
 function vercpf(cpf) {
+    alert("cpf");
     if (cpf.length != 11 || 
         cpf == "00000000000" || 
         cpf == "11111111111" || 
@@ -37,8 +38,7 @@ function vercpf(cpf) {
             if (rev != parseInt(cpf.charAt(10)))
             return false;
     
-            alert('O CPF INFORMADO É VÁLIDO.'
-        ); 
+            alert('O CPF INFORMADO É VÁLIDO.'); 
     
             return true;
     }
