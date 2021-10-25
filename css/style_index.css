@@ -28,6 +28,36 @@ nav {
 }
 /**/
 
+/* Acessibilidade */ 
+    .aumentarH1 {
+        font-size: 30px;
+    }
+
+    .aumentarH2 {
+        font-size: 26px;
+    }
+
+    .aumentarH3 {
+        font-size: 24px;
+    }
+
+    .aumentardescricaoSN {
+        font-size: 26px;
+    }
+
+    .aumentarP {
+        font-size: 20px;
+    }
+
+    .aumentarA {
+        font-size: 18px;
+    }
+
+    .aumentarTexto {
+        font-size: 18px;
+    }
+/**/
+
 /* SESSÃO: Banner */
 #banner {
     margin-top: 20px;
@@ -161,13 +191,18 @@ div.frenteCartao img {
     margin-right: 10px;
 }
 
+.versoCartao>.aumentarDescricao {
+    font-size: 16.8px;
+    margin-top: 23px;
+}
+
 /* SESSÃO: Nossos Trabalhos */
 #nossosTrabalhos {
     display: flex;
     justify-content: space-around;
     background-color: whitesmoke;
     padding-left: 70px;
-    padding-top: 15px;
+    padding-top: 70px;
 }
 
 #divNT1 {
@@ -203,7 +238,7 @@ div.frenteCartao img {
     color: white;
     border: none;
     width: 180px;
-    height: 25px;
+    height: 40px;
     box-shadow: 1px 1px 1px 1px lightgray;
 }
 
@@ -410,7 +445,7 @@ div.frenteCartao img {
 
     #nossosTrabalhos {
         padding-left: 20px;
-        padding-top: 200px;
+        padding-top: 250px;
     }
 
     #divNT1 {
@@ -421,7 +456,7 @@ div.frenteCartao img {
     #divNT2 {
         width: 45vh;
         height: 38vh;
-        margin-top: 70px;
+        margin-top: 40px;
     }
 
     #divNT1 h1{
@@ -430,7 +465,7 @@ div.frenteCartao img {
     }
 
     #divNT1 p{
-        font-size: smaller;
+        font-size: 13px;
     }
 
     #divNT1 button{
@@ -476,6 +511,32 @@ div.frenteCartao img {
         margin-left: -20px;
     }
 
+    /* Acessibilidade */ 
+        .aumentarH1 {
+            font-size: 30px;
+        }
+
+        .aumentarH2 {
+            font-size: 24px;
+        }
+
+        .aumentarH3 {
+            font-size: 22px;
+        }
+
+        .aumentarP {
+            font-size: 16px;
+        }        
+
+        .aumentarA {
+            font-size: 18px;
+        }
+
+        .versoCartao>.aumentarDescricao {
+            font-size: 15px;
+            margin-top: 0px
+        }
+    /**/
 }
 
 /**/
@@ -541,7 +602,7 @@ div.frenteCartao img {
     #nossosTrabalhos {
         flex-wrap: wrap;
         padding-left: 1px;
-        padding-top: 20px;
+        padding-top: 50px;
     }
 
     #divNT1 {
