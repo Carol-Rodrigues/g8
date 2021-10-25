@@ -25,7 +25,7 @@
             <section class="card-info">
                 <div class="area-input">
                     <label for="desc">Descrição do Serviço:</label>
-                    <input class="input-form" type="text" name="desc" id="desc" placeholder="digite algo" >
+                    <input class="input-form" type="text" name="desc" id="desc" placeholder="Digite uma breve descrição do serviço solicitado">
                 </div> <!-- input descrição dos serviços-->
                 
                 <div class="box-listas">
@@ -33,27 +33,27 @@
                         <h4>Categoria Serviço:</h4>
                         <ul class="lista-servicos">
                             <li>
-                                <input type="radio" name="servico" id="serv1">
+                                <input type="radio" name="servico" id="serv1" value=0 checked>
                                 <label for="serv1">Desenvolvimento de Solução</label>
                             </li>
                             
                             <li>
-                                <input type="radio" name="servico" id="serv2">
+                                <input type="radio" name="servico" id="serv2" value=1>
                                 <label for="serv2">Consultoria Infraestrutura</label>
                             </li>
                             
                             <li>
-                                <input type="radio" name="servico" id="serv3">
+                                <input type="radio" name="servico" id="serv3" value=2>
                                 <label for="serv3">Consultoria Solução</label>
                             </li>
                             
                             <li>
-                                <input type="radio" name="servico" id="serv4">
+                                <input type="radio" name="servico" id="serv4" value=3>
                                 <label for="serv4">Manutenção de Hardware</label>
                             </li>
                             
                             <li>
-                                <input type="radio" name="servico" id="serv5">
+                                <input type="radio" name="servico" id="serv5" value=4>
                                 <label for="serv5">Consultoria em Aquisições</label>
                             </li>
                         </ul> <!-- ul dos itens --> 
@@ -64,22 +64,22 @@
                         <h4>Tamanho da Empresa:</h4>
                         <ul class="lista-servicos">
                             <li>
-                                <input type="radio" name="tamanhoEmpresa" id="tamanhoEmpresa1">
+                                <input type="radio" name="tamanhoEmpresa" id="tamanhoEmpresa1" value="0" checked>
                                 <label for="tamanhoEmpresa1">Pequena</label> 
                             </li>
     
                             <li>
-                                <input type="radio" name="tamanhoEmpresa" id="tamanhoEmpresa2">
+                                <input type="radio" name="tamanhoEmpresa" id="tamanhoEmpresa2" value="1">
                                 <label for="tamanhoEmpresa">Média</label>
                             </li>
     
                             <li>
-                                <input type="radio" name="tamanhoEmpresa" id="tamanhoEmpresa3">
+                                <input type="radio" name="tamanhoEmpresa" id="tamanhoEmpresa3" value="2">
                                 <label for="tamanhoEmpresa">Grande</label>
                             </li>
     
                             <li>
-                                <input type="radio" name="tamanhoEmpresa" id="tamanhoEmpresa4">
+                                <input type="radio" name="tamanhoEmpresa" id="tamanhoEmpresa4" value="3">
                                 <label for="tamanhoEmpresa">Multinacional</label>
                             </li>
                         </ul> <!-- ul dos itens --> 
@@ -87,20 +87,20 @@
                 </div> <!-- box das listas-->
 
                 <div class="area-botoes">
-                    <button class="botao">Concluir</button>
-                    <button class="botao">Cancelar</button>
+                    <button class="botao" id="btnConcluir" onclick="servico.salvar()">Concluir</button>
+                    <button class="botao" id="btnCancelar" onclick="servico.cancelar()">Cancelar</button>
                 </div> <!-- botoes -->
             </section> <!-- card de inputs -->
 
             <section class="area-valor">
                 <div class="campo-valor" id="totalItens">
                     <label for="qntServicos">Quantidade de Serviços:</label>
-                    <p id="qntServicos">2</p>
+                    <p id="qntServicos"></p>
                 </div> <!-- div da quantidade de serviços até o momento na nota-->
 
                 <div class="campo-valor" id="totalPreco">
                     <label for="valorTotal">Total a Pagar: R$</label>
-                    <p id="valorTotal">5500</p>
+                    <p id="valorTotal"></p>
                 </div> <!-- div do preço total dos serviços-->
             </section> <!-- seção area valor -->
 
@@ -115,22 +115,6 @@
                         <th>ações</th>
                     </thead>
                     <tbody id="tbody">
-                        <tr>
-                            <td>1</td>
-                            <td>Manutenção de Hardware</td>
-                            <td>pequena</td>
-                            <td>3500</td>
-                            <td>atualizar o hw dos computadores usados na empresa</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Consultoria em Aquisições </td>
-                            <td>pequena</td>
-                            <td>2000</td>
-                            <td>Comprar novos computadores para a empresa</td>
-                            <td></td>
-                        </tr>
                     </tbody>
                 </table>
 
@@ -153,6 +137,8 @@
             new window.VLibras.Widget('https://vlibras.gov.br/app');
           </script>
         </div> <!-- Vlibras-->
+
+        <!-- chamando meu script -->
         <script src="js/javaScript.js"></script>
     </body>
 </html>
