@@ -30,4 +30,15 @@ $(document).ready(function () {
             $("#divNT2").css("backgroundImage", "url(" + vtBanner[i] + ")").fadeIn(1000);
         });
     }
+
+    $("#acess1").on("click", () => {
+        $(".descricaoSN").toggleClass("aumentardescricaoSN");
+        $("h1").toggleClass("aumentarH1");
+        $("h2").toggleClass("aumentarH2");
+        $("h3").toggleClass("aumentarH3");
+        $(".descricao").toggleClass("aumentarDescricao");
+        $("p").toggleClass("aumentarP");
+        $("a").toggleClass("aumentarA");
+        $("#acess1").toggleClass("aumentarTexto")
+    });
 })
