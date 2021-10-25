@@ -79,6 +79,10 @@ nav {
     padding-left: 40px;
 }
 
+.desc2 {
+    visibility: hidden;
+}
+
 #main-grid {
     margin-top: 20px;
     display: grid;
@@ -155,11 +159,6 @@ div.frenteCartao img {
     margin-left: 10px;
     margin-right: 10px;
 }
-
-/* .descricao p:nth-of-type(n+2) {
-    margin-top: 350px
-} */
-/**/
 
 /* SESSÃO: Nossos Trabalhos */
 #nossosTrabalhos {
@@ -352,9 +351,26 @@ div.frenteCartao img {
         padding-left: 10px;
     }
 
-    #sobreNos p:first-of-type {
+    .descricaoSN {
         font-size: smaller;
         padding-left: 10px;
+    }
+
+    #sobreNos h2 {
+        font-size: 18px;
+    }
+
+    #sobreNos h3 {
+        font-size: 16px;
+    }
+
+    .descricao {
+        font-size: 13px;
+    }
+  
+    #descricaoG8 {
+        margin-top: 5px;
+        font-size: 12.5px;
     }
 
     #main-grid {
@@ -393,7 +409,7 @@ div.frenteCartao img {
 
     #nossosTrabalhos {
         padding-left: 20px;
-        padding-top: 180px;
+        padding-top: 200px;
     }
 
     #divNT1 {
@@ -470,6 +486,10 @@ div.frenteCartao img {
         margin-top: 10px;
         height: 30vh;
     }
+    
+    body {
+        width: 88%;
+    }
 
     #nome {
         font-size: 6vh;
@@ -479,7 +499,7 @@ div.frenteCartao img {
     #main-grid {
         margin-left: -30px;
         column-gap: 0;
-        margin-right: 20px;
+        margin-right: 5px;
     }
 
     div.frenteCartao img {
@@ -487,18 +507,40 @@ div.frenteCartao img {
     }
 
     .cartaoRotativo {
-        width: 13vw;
+        width: 35vw;
         height: 20vh;
     }
 
     #sobreNos h1 {
         font-size: 16px;
+    }  
+
+    #sobreNos h2 {
+        font-size: 15px;
+    }
+
+    #sobreNos h3 {
+        font-size: 14px;
+    }
+
+    .descricao {
+        display: none;
+        /* Para desaparecer o texto original */
+    }
+
+    .desc2 {
+        visibility: visible;
+        /* Para aparecer o texto resumido */
+        margin-top: 12px;
+        font-size: 13px;
+        padding-left: 2px;
+        padding-right: 2px;
     }
 
     #nossosTrabalhos {
         flex-wrap: wrap;
         padding-left: 1px;
-        padding-top: 1px;
+        padding-top: 20px;
     }
 
     #divNT1 {
