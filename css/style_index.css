@@ -5,27 +5,136 @@
     justify-content: center;
     text-align: center;
     font-family: Roboto, sans-serif;
+
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    font-size: 100%;
+}
+
+:root {
+    --color01: #308eb07c;
+    --color02: #307461b6;
+    --color03: #4EBC9D;
+    --color04: #b38d63;
+    --color05: #E95F52;
+    --back-color: rgb(255, 252, 248);
 }
 
 body {
-    background-image: url(../imagens/fundo5.jpg);
+    background-image: url(../imagens/fundo4.png);
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1500px;
     width: 80%;
     margin: 0px auto;
-    box-shadow: -10px 0px 13px 10px lightgray, 10px 0px 13px 10px lightgray, 5px 5px 15px 55px rgba(0,0,0,0);
+    box-shadow: -10px 0px 13px 10px lightgray, 10px 0px 13px 10px lightgray, 5px 5px 15px 55px rgba(0,0,0,0)
 }
 
-nav {
-    height: 5vh;
-    background-color: #FF9900;
-}  
+header {
+    display: grid;
+    grid-template-areas: 'header' 'main' 'footer';
+    grid-template-columns: 20vw;
+    grid-template-rows: 5vh auto auto;
+}
 
 .flecha {
     margin-left: 15px;
     font-weight: 700;
 }
+/**/
+
+/* HEADER AND FOOTER */
+
+    .header {
+        height: 300px;
+        grid-area: header;
+        background-color: #FFF0CA;
+        border-bottom: 1px solid var(--color05);
+    }
+
+    .main {
+        height: 1000px;
+        width: 500px;
+        background-color: var(--back-color);
+    }
+
+    .footer {
+        height: 230px;
+        grid-area: footer;
+        background-color: #52c7a631;
+        color: var(--color04);
+        border-bottom: 1px solid var(--color05);
+    }
+
+    .nav.container {
+        display: flex;
+        width: 100vw;
+        height: 15vh;
+        justify-content: center;
+    }
+
+    .nav-item.menu {
+        text-decoration: underline;
+        font-size: 1.2rem;
+        color: var(--color05);
+        background-color: var(--back-color);
+        margin: auto;
+        padding: 1rem;
+        border-radius: 2rem;
+    }
+
+    .footer.container {
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+
+    .footer address {
+        width: 60vw;
+        line-height: 2rem;
+    }
+
+    .footer .paragrafo {
+        font-size: 1rem;
+        text-decoration: underline;
+    }
+
+    .footer #linkedin {
+        align-items: center;
+        width: 4vw;
+        background-image: url('../imagens/facebook.png');
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .footer #twitter {
+        align-items: center;
+        width: 4vw;
+        background-image: url('../imagens/twitter.png');
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .footer #instagram {
+        align-items: center;
+        width: 4vw;
+        background-image: url('../imagens/instagram.png');
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .footer #facebook {
+        align-items: center;
+        width: 4vw;
+        background-image: url('../imagens/facebook.png');
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
 /**/
 
 /* Acessibilidade */ 
@@ -178,7 +287,7 @@ div.frenteCartao img {
 }
   
 .versoCartao {
-    background-color: #FF9900;
+    background-color: #f2bb29;
     color: white;
     transform: rotateY(180deg);
 }
@@ -233,7 +342,7 @@ div.frenteCartao img {
 #divNT1 button{
     margin-left: -120px;
     margin-top: 20px;
-    background-color: #FF9900;
+    background-color: #f2bb29;
     font-style: italic;
     color: white;
     border: none;
@@ -274,12 +383,12 @@ div.frenteCartao img {
 
 #trabalhosRecentes a:link {
     text-decoration: none;
-    color: #FF9900;
+    color: #f2bb29;
 }
 
 #trabalhosRecentes a:visited {
     text-decoration: none;
-    color: #FF9900;
+    color: #f2bb29;
 }
 
 #trabalhosRecentes a:hover {
@@ -288,7 +397,7 @@ div.frenteCartao img {
 
 #trabalhosRecentes .flecha {
     margin-left: 7px;
-    color: #FF9900;
+    color: #f2bb29;
     text-align: left;
 }
 
@@ -352,7 +461,7 @@ div.frenteCartao img {
 #inscreva1 button{
     margin-left: -120px;
     margin-top: 30px;
-    background-color: #FF9900;
+    background-color: #f2bb29;
     font-style: italic;
     color: white;
     border: none;

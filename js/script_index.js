@@ -1,6 +1,6 @@
 // Função para que o nome da empresa que fica sobre o banner seja escrito ao carregar a página
 let j = 0;
-let txt = "G8 Tecnologia"
+let txt = "G8 Tech!"
 function escrever() {
     if (j < txt.length) {
         document.getElementById("nome").innerHTML += txt.charAt(j);
