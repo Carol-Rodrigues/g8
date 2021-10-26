@@ -30,16 +30,20 @@ body {
     box-shadow: -10px 0px 13px 10px lightgray, 10px 0px 13px 10px lightgray, 5px 5px 15px 55px rgba(0,0,0,0)
 }
 
-header {
-    display: grid;
-    grid-template-areas: 'header' 'main' 'footer';
-    grid-template-columns: 20vw;
-    grid-template-rows: 5vh auto auto;
-}
-
 .flecha {
     margin-left: 15px;
     font-weight: 700;
+}
+
+#acess1 {
+    color: var(--color05);
+    font-size: 20px;
+    font-weight: 900;
+    background-color: var(--back-color);
+    border: 1px solid var(--color05);
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 2rem;
 }
 /**/
 
@@ -47,20 +51,12 @@ header {
 
     .header {
         height: 300px;
-        grid-area: header;
         background-color: #FFF0CA;
         border-bottom: 1px solid var(--color05);
     }
 
-    .main {
-        height: 1000px;
-        width: 500px;
-        background-color: var(--back-color);
-    }
-
     .footer {
         height: 230px;
-        grid-area: footer;
         background-color: #52c7a631;
         color: var(--color04);
         border-bottom: 1px solid var(--color05);
@@ -68,8 +64,8 @@ header {
 
     .nav.container {
         display: flex;
-        width: 100vw;
-        height: 15vh;
+        width: 80vw;
+        height: 10vh;
         justify-content: center;
     }
 
@@ -86,12 +82,13 @@ header {
     .footer.container {
         display: flex;
         justify-content: space-around;
-        padding: 1rem;
+        padding-top: 2rem;
     }
 
     .footer address {
-        width: 60vw;
-        line-height: 2rem;
+        width: 40vw;
+        line-height: 1.8rem;
+        text-align: left;
     }
 
     .footer .paragrafo {
@@ -102,7 +99,7 @@ header {
     .footer #linkedin {
         align-items: center;
         width: 4vw;
-        background-image: url('../imagens/facebook.png');
+        background-image: url('../imagens/linkedin.png');
         background-size: 50%;
         background-repeat: no-repeat;
         background-position: center;
@@ -143,19 +140,19 @@ header {
     }
 
     .aumentarH2 {
-        font-size: 26px;
+        font-size: 20px;
     }
 
     .aumentarH3 {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .aumentardescricaoSN {
-        font-size: 26px;
+        font-size: 20px;
     }
 
     .aumentarP {
-        font-size: 20px;
+        font-size: 17px;
     }
 
     .aumentarA {
@@ -164,6 +161,14 @@ header {
 
     .aumentarTexto {
         font-size: 18px;
+    }
+
+    .aumentarMenu {
+        zoom: 1.3;
+    }
+
+    .aumentarFooter {
+        zoom: 1.3;
     }
 /**/
 
@@ -181,24 +186,25 @@ header {
 
 #nome {
     font-family: 'Courier New', Courier, monospace;
-    color: white;
-    font-size: 12vh;
-    opacity: 50%;
+    color: #307461;
+    font-size: 10vh;
+    opacity: 100%;
+    font-weight: 850;
     text-align: center;
     position: absolute;
     margin-top: 170px;
     mix-blend-mode: screen;
-    left: 55%;
+    left: 66%;
     transform: translate(-55%, -60%);
 }
 /**/
 
 /* SESSÃO: Sobre nós */
 #sobreNos {
-    margin-top: -5px;
+    padding-top: 15px;
     height: 100vh;
     display: inline-block;
-    background: linear-gradient(#f2f2f2, #f2f2f2 29.9%, whitesmoke 70.1%, whitesmoke 100%);
+    background-color: whitesmoke;    
 }
 
 #sobreNos h1 {
@@ -219,7 +225,7 @@ header {
     padding-left: 40px;
 }
 
-.desc2 {
+.desc2, #add2 {
     visibility: hidden;
 }
 
@@ -253,13 +259,13 @@ header {
 }
 
 div.frenteCartao img {
-    width: 30vh;
+    width: 30.8vh;
 }
 
 .cartaoRotativo {
     background-color: transparent;
     width: 20vw;
-    height: 40vh;
+    height: 41vh;
     perspective: 1000px;
     padding-left: 40px;
 }
@@ -309,7 +315,7 @@ div.frenteCartao img {
 #nossosTrabalhos {
     display: flex;
     justify-content: space-around;
-    background-color: whitesmoke;
+    background: linear-gradient(#f2f2f2, #f2f2f2 29.9%, whitesmoke 70.1%, whitesmoke 100%);
     padding-left: 70px;
     padding-top: 70px;
 }
@@ -419,7 +425,7 @@ div.frenteCartao img {
 #inscreva{
     display: flex;
     justify-content: space-evenly;
-    background: linear-gradient(whitesmoke, whitesmoke 29.9%, #c4c4c4 70.1%, #c4c4c4 100%);
+    background: linear-gradient(whitesmoke, whitesmoke 29.9%, #e6e5e5 70.1%, #e6e5e5 100%);
     padding-top: 10vh;
     padding-bottom: 10px;
 }
@@ -491,6 +497,27 @@ div.frenteCartao img {
 /* Tablet (width: 768px) */
 @media (max-width:768px) {
 
+    .header {
+        height: 220px;
+    }
+
+    #acess1 {
+        zoom: 80%
+    }
+
+    .nav.container {
+        flex-wrap: wrap;
+    }
+
+    .nav-item.menu {
+        font-size: 1rem;
+        padding: 10px;        
+    }
+
+    #logo {
+        zoom: 75%
+    }
+
     #sobreNos h1 {
         font-size: 18px;
         padding-left: 10px;
@@ -544,17 +571,17 @@ div.frenteCartao img {
     }
 
     div.frenteCartao img {
-        width: 27vh;
+        width: 30vh;
     }
 
     .cartaoRotativo {
-        width: 27vw;
-        height: 36vh;
+        width: 35vw;
+        height: 40vh;
     }
 
     #nossosTrabalhos {
         padding-left: 20px;
-        padding-top: 250px;
+        margin-top: -40px;
     }
 
     #divNT1 {
@@ -565,11 +592,9 @@ div.frenteCartao img {
     #divNT2 {
         width: 45vh;
         height: 38vh;
-        margin-top: 40px;
     }
 
     #divNT1 h1{
-        margin-bottom: 20px;
         font-size: 18px;
     }
 
@@ -590,7 +615,7 @@ div.frenteCartao img {
     }  
 
     #inscreva{
-        padding-top: 5vh;
+        padding-top: 50vh;
     }
 
     #inscreva1 {
@@ -608,6 +633,10 @@ div.frenteCartao img {
         height: 35vh;
     }
 
+    #nome {
+        margin-top: 120px;
+    }
+
     #inscreva1 h2{
         font-size: 18px;
     }
@@ -621,21 +650,9 @@ div.frenteCartao img {
     }
 
     /* Acessibilidade */ 
-        .aumentarH1 {
-            font-size: 30px;
-        }
-
-        .aumentarH2 {
-            font-size: 24px;
-        }
-
-        .aumentarH3 {
-            font-size: 22px;
-        }
-
-        .aumentarP {
-            font-size: 16px;
-        }        
+        .aumentarH1, .aumentarH2, .aumentarH3, .aumentarP, .aumentarFooter {
+            zoom: 1.1;
+        }     
 
         .aumentarA {
             font-size: 18px;
@@ -645,6 +662,10 @@ div.frenteCartao img {
             font-size: 15px;
             margin-top: 0px
         }
+
+        .aumentarMenu {
+            zoom: 1;
+        }
     /**/
 }
 
@@ -653,13 +674,59 @@ div.frenteCartao img {
 /* Mobile (width: 426px) */
 @media (max-width:426px) {
 
-    #banner {
-        margin-top: 10px;
-        height: 30vh;
+    .header {
+        height: 350px;
+    }
+
+    #acess1 {
+        zoom: 80%;
+    }
+
+    .nav.container {
+        flex-wrap: wrap;
+    }
+
+    .nav-item.menu {
+        font-size: 1rem;
+        padding: 10px;
+        margin-bottom: 10px;
+        margin-left: 20px;  
+    }
+
+    #add1 {
+        display: none;
+        /* Para desaparecer o texto original */
+    }
+
+    #add2 {
+        visibility: visible;
+        /* Para aparecer o texto resumido */
+        zoom: 80%;
+        margin-left: 10px;
+        width: 300px;
+    }
+
+    .paragrafo {
+        zoom: 80%;
+        margin-left: 30px;
+        margin-top: -70px;
+    }
+
+    #linkedin, #twitter, #instagram, #facebook {
+        margin-top: -30px;
+        zoom: 300%;
+    }
+
+    .footer {
+        height: 200px;
+    }
+
+    #logo {
+        zoom: 65%;
     }
     
     body {
-        width: 88%;
+        width: 90%;
     }
 
     #nome {
@@ -678,7 +745,7 @@ div.frenteCartao img {
     }
 
     .cartaoRotativo {
-        width: 35vw;
+        width: 23vh;
         height: 20vh;
     }
 
@@ -716,7 +783,7 @@ div.frenteCartao img {
 
     #divNT1 {
         max-width: 250px;
-        margin-top: -105px;
+        margin-top: -30px;
     }
 
     #divNT2 {
@@ -758,11 +825,12 @@ div.frenteCartao img {
     #inscreva1 {
         flex: 20%;
         max-width: 200px;
-        margin-top: -80px;
+        margin-top: -100px;
     }
 
     #inscreva1 p:first-of-type {
         font-size: x-small;
+        margin-top: 10px;
     }
 
     #inscreva1 p:last-of-type {
@@ -783,6 +851,15 @@ div.frenteCartao img {
         margin-bottom: 10px;
     }
 
+    /* Acessibilidade */ 
+        .aumentarH1, .aumentarH2, .aumentarH3 {
+            zoom: 1.7;
+        }
+
+        .aumentarA {
+            font-size: 18px;
+        }
+    /**/    
 }
 
 /**/

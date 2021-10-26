@@ -39,6 +39,8 @@ $(document).ready(function () {
         $(".descricao").toggleClass("aumentarDescricao");
         $("p").toggleClass("aumentarP");
         $("a").toggleClass("aumentarA");
-        $("#acess1").toggleClass("aumentarTexto")
+        $("#acess1").toggleClass("aumentarTexto");
+        $(".menu").toggleClass("aumentarMenu");
+        $(".footer").toggleClass("aumentarFooter")
     });
 })
